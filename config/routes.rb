@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
     get '/query_params_url' => 'pages#query_action'
+    get '/name_route' => 'pages#name_action'
   end
 end

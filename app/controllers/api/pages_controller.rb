@@ -31,4 +31,9 @@ class Api::PagesController < ApplicationController
     end
     render 'game.json.jbuilder'
   end
+
+  def segment_action
+    @city = params[:apple]
+    render 'segment.json.jbuilder'
+  end
 end

@@ -36,4 +36,5 @@ class Api::PagesController < ApplicationController
     @city = params[:apple]
     render 'segment.json.jbuilder'
   end
+
 end

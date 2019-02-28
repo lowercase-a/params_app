@@ -36,17 +36,4 @@ class Api::PagesController < ApplicationController
     @city = params[:apple]
     render 'segment.json.jbuilder'
   end
-
-  def segment_game
-    user_input = params[:user_guess].to_i
-    answer = 32
-    if user_input > answer
-      @message = "hey you guessed too high"
-    elsif user_input < answer
-      @message = "hey you guessed too low"
-    elsif user_input == answer
-      @message = "hey you git it right. brett didn't believe in you, but you did it"
-    end
-    render 'segment_game.json.jbuilder'
-  end
 end

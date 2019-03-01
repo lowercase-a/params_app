@@ -37,4 +37,9 @@ class Api::PagesController < ApplicationController
     render 'segment.json.jbuilder'
   end
 
+  def body_params_action
+    @name = params[:name]
+    render 'body.json.jbuilder'
+  end
+
 end
